@@ -6,7 +6,7 @@
 
 header{
     padding: 25px 25px;
-    box-shadow: 0px -2px 9px 0px gray;
+    border-bottom: 1px #333 solid;
 }
 
 .imagen1 {
@@ -36,19 +36,22 @@ nav ul li a {
 }
 
 .opcion {
-    width: 20%;
-}
-
-.menu { 
+    border-right: solid 1px black;
     width: 400px;
-    box-shadow: 0px -2px 9px 0px gray;
     max-width:500px;
 }
+
 .menu li { 
     border-bottom: 1px gray solid;
     display:flex;
     align-items: center;
-    margin: 15px 0px;
+   margin: 15px 0px;
+   transition:all .2s linear;
+}
+.hover-efect li:hover { 
+    cursor:pointer;
+    background-color: rgba(145, 143, 143, 0.336);
+    transition:all .2s linear;
 }
 .icono{
     display:block;
@@ -76,6 +79,7 @@ nav ul li a {
     border: 1px solid rgb(156, 154, 154)
 }
 .content-primary button {
+    border:none;
     width: 70px;
     height: 30px;
     background-color:rgb(33, 138, 207);
@@ -105,4 +109,38 @@ nav ul li a {
 .content-primary .list-task .cross-out {
 text-decoration:line-through;
 
+}
+/*****Variables-Darkmode***/
+:root {
+    --dl-background-color:#333 ;
+    --dl-border-color:#ccc;
+    --dl-text-color:#ccc;
+    --dl-hover-color:#ccc;
+}
+
+/***+++Dark-Mode****/
+
+.dark header {
+    background-color: var(--dl-background-color);
+    border-bottom: 1px var(--dl-border-color) solid;
+}
+
+nav ul li a {
+    color: var(--dl-text-color);
+    text-decoration: none;
+}
+.dark .container{
+    background-color: var(--dl-background-color);
+}
+
+.dark .menu li a {
+    color: var(--dl-text-color); 
+} 
+
+.dark .opcion {
+    border-right: solid 1px var(--dl-border-color);
+}
+
+.dark .content-primary .list-task {
+    color:var(--dl-text-color);   
 }
