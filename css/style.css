@@ -4,10 +4,6 @@ html{
     height: 100%;
 }
 
-body {
-    height: 100vh;
-}
-
 *{ margin: 0px; 
    padding: 0px;
    box-sizing: border-box;
@@ -314,4 +310,100 @@ nav ul li a {
        .content-primary .list-task li:nth-child(7) {
         background-color:rgba(230, 95, 95, 0.753); 
      }
+      .content-primary .list-task li:nth-child(8) {
+        background-color:rgba(30, 139, 72, 0.753); 
+     }
+     .content-primary .list-task li:nth-child(9) {
+        background-color:rgba(206, 150, 45, 0.753); 
+     }
+     .content-primary .list-task li:nth-child(10) {
+        background-color:darkorchid; 
+    }
+}
+/********Media Query Mobile**********/
+/*****************************/
+
+@media (min-width:689px) and (max-width:1024px) {
+
+    header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .imagen1 {
+        display: block;
+        margin: initial;
+        margin-top: 0px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+   .content-primary  .start{
+    max-width: 70%;
+
+   
+    }
+.content-primary button {
+    margin-left: 30px;
+    }
+
+.content-primary {
+    width: 80%;
+    padding: 40px 0%;
+}
+.content-primary .list-task {
+    margin: 40px 5%;
+    max-width: 90%;
+}
+.content-primary .list-task {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid;
+        justify-content: space-around;
+    }
+
+.content-primary .list-task li {
+    width: 30%;
+    height: 150px;
+    justify-content: center;
+    padding: 15px 15px;
+    border:none;
+    border: 1px solid #ccc;
+    margin:10px 0px;
+    border-radius: 8px;
+    }
+
+.content-primary .list-task .title {
+        width: 100%;
+        height: 40px;
+        border-bottom: none;
+        justify-content: center;
+    }
+ .content-primary .list-task li:nth-child(2) {
+        background-color:darkorchid; 
+    }
+     .content-primary .list-task li:nth-child(3) {
+        background-color:rgba(30, 197, 105, 0.555); 
+    }
+     .content-primary .list-task li:nth-child(4) {
+        background-color:rgba(45, 182, 206, 0.753); 
+     }
+      .content-primary .list-task li:nth-child(5) {
+        background-color:rgba(206, 150, 45, 0.753); 
+     }
+      .content-primary .list-task li:nth-child(6) {
+        background-color:rgba(113, 114, 28, 0.61); 
+     }
+       .content-primary .list-task li:nth-child(7) {
+        background-color:rgba(230, 95, 95, 0.753); 
+     }
+      .content-primary .list-task li:nth-child(8) {
+        background-color:rgba(30, 139, 72, 0.753); 
+     }
+     .content-primary .list-task li:nth-child(9) {
+        background-color:rgba(206, 150, 45, 0.753); 
+     }
+     .content-primary .list-task li:nth-child(10) {
+        background-color:darkorchid; 
+    }
 }
