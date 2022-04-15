@@ -1,3 +1,12 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+}
 
 *{ margin: 0px; 
    padding: 0px;
@@ -13,20 +22,20 @@ header{
     display:block;
     margin:20px auto;
     width: 50px;
+
 }
 
-.imagen1:hover {
-    /**animation: rotatelogo 3s 1s infinite linear *****el primer tiempo es para la duración y el ssegundo tiempo es el tiempo que se demora en empezar*****/
+/**.imagen1:hover {
+    animation: rotatelogo 3s 1s infinite linear *****el primer tiempo es para la duración y el ssegundo tiempo es el tiempo que se demora en empezar*****/
 
-  animation-name: bounce;
+  /***animation-name: bounce;
   
   transform-origin: center bottom;
  
   animation-duration: 1s;
 
   animation-fill-mode: both;
-
-}
+}**/
 
 
 .navegation {
@@ -45,7 +54,7 @@ nav ul li a {
 /*********************/
 .container {
     display: flex;
-    text-decoration: none;
+    height: 100%;
 }
 
 .opcion {
@@ -71,6 +80,7 @@ nav ul li a {
     width: 40px;
     height: 30px;
     margin: 15px 40px ;
+    font-size: 30px;
 }
 .menu li a {
     text-decoration: none;
@@ -122,8 +132,9 @@ nav ul li a {
 .content-primary .list-task .cross-out {
 text-decoration:line-through;
 }
-
-
+.menuMobile {
+  display: none;
+    }
 /****Animations*****/
 /*******************/
 @keyframes rotatelogo {
@@ -158,6 +169,66 @@ text-decoration:line-through;
         transform: translate3d(0,-4px,0);
     }
   } 
+/********Media Query**********/
+/*****************************/
+@media (max-width:688px){
+    .opcion {
+        display:none;
+    }
+    .content-primary {
+        width: 100%;
+    }
+    .content-primary .start {
+        width: 100%;
+   }
+   .content-primary button {
+        width: 100%;
+        margin-left:0px;
+        margin-top: 20px;
+    }
+    .imagen1 {
+        display: block;
+        margin: initial;
+        margin-top: 0px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .navegation {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    .navegation li a {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .navegation li {
+        border-bottom:#ccc 1px solid;
+    }
+
+     .navegation li:last-child {
+         border-bottom: none;
+        
+    }
+    header{
+        padding: 0px 0px;
+    }
+
+    .menuMobile {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    text-align: center;
+    font-size: 2rem;
+    }
+
+}
+
 
 /*****Variables-Darkmode***/
 :root {
@@ -168,6 +239,9 @@ text-decoration:line-through;
 }
 
 /***+++Dark-Mode****/
+.dark{
+    color:var(--dl-text-color);
+}
 
 .dark header {
     background-color: var(--dl-background-color);
