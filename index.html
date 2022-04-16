@@ -3,16 +3,21 @@
 
 <head>
     <title>Ejercicio 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="dark">
     <header>
 
-        <img class="imagen1" src="assets/img/icono1.png" alt=" icono principal" />
+        <img class="imagen1 animate__animated animate__headShake" src="assets/img/icono1.png" alt=" icono principal" />
+        <span class="menuMobile ">
+            <i class="bi bi-list"></i>
+        </span>
         <nav>
 
-            <ul class="navegation hover-efect">
+            <ul class=" navegation hover-efect animate__animated animate__swing">
                 <li> <a href="index.html"> Inicio </a> </li>
                 <li> <a href="about.html"> Quienes somos </a> </li>
                 <li> <a href="contact.html"> Contacto </a> </li>
@@ -24,11 +29,11 @@
     <div class="container">
         <aside class="opcion">
             <ul class="menu hover-efect">
-                <li><img class="icono" src="assets/img/icono1.png" alt=""><a href="indext.html">Opción 1</a></li>
-                <li><img class="icono" src="assets/img/icono1.png" alt=""><a href="indext.html">Opción 2</a></li>
-                <li><img class="icono" src="assets/img/icono1.png" alt=""><a href="indext.html">Opción 3</a></li>
-                <li><img class="icono" src="assets/img/icono1.png" alt=""><a href="indext.html">Opción 4</a></li>
-                <li><img class="icono" src="assets/img/icono1.png" alt=""><a href="indext.html">Opción 5</a></li>
+                <li><i class="icono bi bi-person-circle"></i><a href="indext.html">Cuenta 1</a></li>
+                <li><i class="icono bi bi-card-image"></i><a href="indext.html">Galeria</a></li>
+                <li><i class="icono bi bi-calendar2-date"></i><a href="indext.html">Calendario</a></li>
+                <li><i class="icono bi bi-chat-square-dots"></i><a href="indext.html">Comentarios</a></li>
+                <li><i class="icono bi bi-cart-plus"></i><a href="indext.html">Compras</a></li>
             </ul>
         </aside>
 
@@ -37,16 +42,21 @@
 
             <button> Añadir
             </button>
-            <ul class="list-task hover-efect">
-                <li class="title">Tareas</li>
-                <li>Levantarse</li>
-                <li>Tender la cama</li>
-                <li class="cross-out">Preparar el desayuno</li>
-                <li>Lavarse los dientes </li>
-                <li>Vestirse</li>
-                <li> Salir al trabajo</li>
+            <div class="border">
+                <ul class="list-task hover-efect">
+                    <li class="title">Tareas</li>
+                    <li>Levantarse</li>
+                    <li>Tender la cama</li>
+                    <li class="cross-out">Preparar el desayuno</li>
+                    <li>Lavarse los dientes </li>
+                    <li>Vestirse</li>
+                    <li> Salir al trabajo</li>
+                    <li> Hacer ejercicio</li>
+                    <li> Hacer la compra</li>
+                    <li> Hacer la comida</li>
 
-            </ul>
+                </ul>
+            </div>
 
         </main>
     </div>
